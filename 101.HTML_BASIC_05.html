@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>표 만들기</title>
+  </head>
+  <body>
+    <table border="1">
+      <caption>
+        <strong>KOREA WOULDCUP 2023 참가선수 명단</strong>
+      </caption>
+      <thead>
+        <tr>
+          <th>한국선수</th>
+          <th>영국선수</th>
+          <th>브라질선수</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>손흥민</th>
+          <th>케인</th>
+          <th>호나우두</th>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>세계랭킹1위</th>
+          <th>세계랭킹10위</th>
+          <th>세계랭킹100위</th>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
+
+<!--
+<table> : 표 (table) 축약한 것, 표 전체를 정의할 때 사용
+<tr> : 표의 행 (Table Row), 표의 가로줄(행) 만들 때 사용
+<th> : 표의 제목(Table header) 표의 제목 셀을 정의할 때 사용
+  기본적으로 굵은 글씨와 가운데 정렬로 표시(default)
+<td> : 'Table Data'의 약자, 표의 데이터 셀을 정의할 때 사용
+
+  <thead> <tbody> <tfoot> 사용시 구조적인 변화는 없음
+     >> 명확한 구분표시, 가독성이 좋음
+     >> debugging 할 때 좋음  
+-->
