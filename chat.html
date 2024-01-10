@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나만의 채팅창</title>
+    <link href="mycahat.css" rel="stylesheet" />
+    <link href="text.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+  <style>
+    .user_nick{
+        font-size: 30px;
+    }
+    .user_count{
+        font-size: 15px;
+    }
+    
+    input.img-button {
+        background: url( "image/sub1.png" ) no-repeat;
+        border: none;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+      }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <main class="chat-screen">
+            <!--main: semantic tag(의미적 태그)-->
+            <section class="chat-screen bar">
+            <!-- 사용자 정보 -->
+                <div class="user">
+                    <div class="user_column">
+                        <div class="user_pic"></div>
+                    </div>
+                        <div class="user_column">
+                            <p class="user_nick">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;개인채팅방</p>
+                            <p class="user_count"><em>7</em>명 참여중</p>
+                    </div>
+                </div>
+            </section>
+            <ul class="chat-screen_texts">
+                <li class="text">안녕하세요</li>
+                <li class="text">새해 복 많이 받으세요</li>
+                <li class="text">요즘 날씨가 이상하네요</li>
+                <li class="text">옷 잘 챙겨입고 다니세요</li>
+            </ul>
+            <ul class="chat-screen_texts1"> 
+                <li class="text">감사합니다!</li>
+                <li class="text">새해 복 많이 받으세요</li>
+                <li class="text">건강이 최고입니다.</li>
+            </ul>
+            <hr/>
+        </main>
+        <form class="chat-form"></form>
+         <section class="chat-form_field">
+        
+            <textarea class="chat-form-msg"></textarea>
+            <input type="submit" value="전송" class="chat-form_bt" />
+            
+            
+         </section>
+    </div>
+</body>
+</html>
